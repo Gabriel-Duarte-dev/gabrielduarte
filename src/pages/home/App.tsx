@@ -17,7 +17,10 @@ function App(): JSX.Element {
             return (
               <Card
                 description={card.description}
+                resume={card.resume}
+                link={card.link}
                 image={card.image}
+                slides={card.slides}
                 key={index}
               />
             );

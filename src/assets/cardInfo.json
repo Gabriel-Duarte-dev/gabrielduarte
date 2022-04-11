@@ -1,14 +1,36 @@
 [
     {
-        "description": "Mussum Ipsum, cacilds vidis litro abertis. Interessantiss quisso pudiace receita de bolis, mais bolis eu num gostis.Atirei o pau no gatis,per gatis num morreus",
-        "image": "/images/burguer.jpg"
+        "description": "Esse foi o meu primeiro projeto na Texxia, assim que comecei a trabalhar na empresa. Trata-se de uma landing page para uma tabacaria.Nesse projeto eu utilizei, PHP, HTML, CSS e Javascript.",
+        "resume": "Esse foi o meu primeiro projeto na Texxia, assim que comecei a trabalhar na empresa. Trata-se de uma landing page para uma tabacaria.Nesse projeto eu utilizei, PHP, HTML, CSS e Javascript.",
+        "link": "https://europatabacaria.com.br",
+        "image": "https://i.imgur.com/ED0qXiM.png",
+        "slides": [
+            "https://i.imgur.com/ED0qXiM.png",
+            "https://i.imgur.com/nahdf3t.png",
+            "https://i.imgur.com/SnCiu76.png",
+            "https://i.imgur.com/JEbMyPJ.png"
+        ]
     },
     {
-        "description": "Mussum Ipsum, cacilds vidis litro abertis. Interessantiss quisso pudiace receita de bolis, mais bolis eu num gostis.Atirei o pau no gatis,per gatis num morreus",
-        "image": "/images/burguer.jpg"
+        "description": "O MyBots é um sistema de criação de chatBots para o whatsapp, fiz parte do desenvolvimento da ferramenta desde o zero. Ele conta com diversas funcionalidades e integrações para automatizar o atendimento online, como um builder (fluxograma dinâmico) para criação do fluxo de mensagens, integração com I.A do Dialogflow, sendo possível também, criar uma integrações personalizadas através das opções de Entrada/Saída, envio de notificações em massa, entre outras funcionalidades. Utilizamos no projeto, ReactJS, MaterialUI, Nodejs, MongoDB, Docker e GitHub para controle de versionamento do código e Scrum como metodologia de trabalho..",
+        "resume": "O MyBots é um sistema de criação de chatBots para o whatsapp, fiz parte do desenvolvimento da ferramenta desde o zero. Ele conta com diversas funcionalidades e integrações para automatizar o atendimento online.",
+        "link": "https://mybots.app",
+        "image": "https://i.imgur.com/dL8d5rx.jpg",
+        "slides": [
+            "https://i.imgur.com/dL8d5rx.jpg",
+            "https://i.imgur.com/1TbgVIw.jpg",
+            "https://i.imgur.com/2FyJQ85.png",
+            "https://i.imgur.com/lxmrHuo.png"
+        ]
     },
     {
-        "description": "Mussum Ipsum, cacilds vidis litro abertis. Interessantiss quisso pudiace receita de bolis, mais bolis eu num gostis.Atirei o pau no gatis,per gatis num morreus",
-        "image": "/images/burguer.jpg"
+        "description": "Essa é uma aplicação simples, feita para testar a api do GitHub. A aplicação possui um campo de pesquisa para buscar um usuário, e dois botões para listar seus repositórios e os repositórios mais visitados.",
+        "resume": "Essa é uma aplicação simples, feita para testar a api do GitHub. A aplicação possui um campo de pesquisa para buscar um usuário, e dois botões para listar seus repositórios e os repositórios mais visitados.",
+        "link": "http://github-api-aplication.surge.sh",
+        "image": "https://i.imgur.com/PpueFWA.png",
+        "slides": [
+            "https://i.imgur.com/PpueFWA.png",
+            "https://i.imgur.com/iw5ANEQ.png"
+        ]
     }
 ]

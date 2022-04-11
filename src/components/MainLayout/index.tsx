@@ -11,6 +11,7 @@ export function MainLayout({ children }: MainLayoutProps): JSX.Element {
     <Flex
       w="100%"
       h="100%"
+      p="0 20px"
       bg="#282A36"
       justify="center"
       align="center"

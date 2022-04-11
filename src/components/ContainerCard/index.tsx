@@ -1,4 +1,4 @@
-import { Box, Flex, Heading } from "@chakra-ui/react";
+import { Box, Flex, Heading, useMediaQuery } from "@chakra-ui/react";
 import { motion } from "framer-motion";
 import { ReactNode } from "react";
 
@@ -12,14 +12,15 @@ export function ContainerCard({
   children,
 }: ContainerCardProps): JSX.Element {
   const MotionBox = motion(Box);
+  const [onBreakeCard] = useMediaQuery("(min-width: 730px)");
   return (
     <MotionBox
       mb={40}
-      opacity={0}
-      transition={{ delay: 0.5 }}
-      animate={{ transform: "translateY(100px)", opacity: 1 }}
+      transition={{ delay: 0.8 }}
+      initial={{ y: -100, opacity: 0 }}
+      animate={{ y: 0, opacity: 1 }}
+      exit={{ y: 0, opacity: 1 }}
       textAlign="center"
-      maxW="70%"
     >
       <Heading
         color="#f8f8f8"
@@ -30,7 +31,12 @@ export function ContainerCard({
       >
         {title}
       </Heading>
-      <Flex justify="center" wrap="wrap">
+      <Flex
+        direction={!onBreakeCard ? "column" : "row"}
+        justify={!onBreakeCard ? "flex-start" : "center"}
+        align={!onBreakeCard ? "center" : ""}
+        wrap="wrap"
+      >
         {children}
       </Flex>
     </MotionBox>

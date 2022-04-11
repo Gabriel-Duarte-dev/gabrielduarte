@@ -1,39 +1,67 @@
 import { Box, Flex, Icon, Image, Text } from "@chakra-ui/react";
 import profile from "/images/profile.jpg";
 import { RiArrowDownSLine } from "react-icons/ri";
-import { motion } from "framer-motion";
+import { AnimatePresence, motion } from "framer-motion";
 
 export function Profile(): JSX.Element {
-  const MotionFlex = motion(Flex);
+  const MotionBox = motion(Box);
+  const MotionText = motion(Text);
   return (
-    <MotionFlex
+    <Flex
       textAlign="center"
       direction="column"
       align="center"
-      w="410px"
+      w={{ base: "320px", sm: "410px" }}
+      mt={10}
       mb={40}
-      transform="translateY(-100px)"
-      opacity={0}
-      transition={{ delay: 0.5 }}
-      animate={{ transform: "translateY(100px)", opacity: 1 }}
     >
-      <Box filter="auto" dropShadow="0px 0px 15px rgba(255,184,108,26%)">
-        <Image
-          src={profile}
-          w="185px"
-          clipPath="polygon(50% 0%, 90% 20%, 100% 60%, 75% 100%, 25% 100%, 0% 60%, 10% 20%)"
-        />
-      </Box>
+      <AnimatePresence>
+        <MotionBox
+          transition={{ delay: 0.5 }}
+          initial={{ y: -100, opacity: 0 }}
+          animate={{ y: 0, opacity: 1 }}
+          exit={{ y: 0, opacity: 1 }}
+          filter="auto"
+          dropShadow="0px 0px 15px rgba(255,184,108,26%)"
+        >
+          <Image
+            src={profile}
+            w="185px"
+            clipPath="polygon(50% 0%, 90% 20%, 100% 60%, 75% 100%, 25% 100%, 0% 60%, 10% 20%)"
+          />
+        </MotionBox>
+      </AnimatePresence>
 
-      <Icon as={RiArrowDownSLine} color="#44475A" fontSize="60px" />
+      <MotionBox
+        color="#44475A"
+        fontSize="60px"
+        transition={{ delay: 0.65 }}
+        initial={{ y: -100, opacity: 0 }}
+        animate={{ y: 0, opacity: 1 }}
+        exit={{ y: 0, opacity: 1 }}
+      >
+        <RiArrowDownSLine />
+      </MotionBox>
 
-      <Text fontSize="16px" fontWeight="100" color="#f8f8f8">
-        Mussum Ipsum, cacilds vidis litro abertis. Interessantiss quisso pudia
-        ce receita de bolis, mais bolis eu num gostis.Atirei o pau no gatis, per
-        gatis num morreus.Cevadis im ampola pa arma uma pindureta.Mauris nec
-        dolor in eros commodo tempor. Aenean aliquam molestie leo, vitae iaculis
-        nisl.
-      </Text>
-    </MotionFlex>
+      <MotionText
+        fontSize={{ base: "13px", sm: "16px" }}
+        fontWeight="100"
+        color="#f8f8f8"
+        transition={{ delay: 0.8 }}
+        initial={{ y: -100, opacity: 0 }}
+        animate={{ y: 0, opacity: 1 }}
+        exit={{ y: 0, opacity: 1 }}
+      >
+        Olá, meu nome é Gabriel Duarte, tenho 20 anos e estudo programação desde
+        2019 quando comecei a faculdade de Ciência da Computação no CEUNSP, onde
+        estou atualmente no 6º semestre. Comecei a trabalhar na área de
+        tecnologia em 2020 quando entrei no quartel, lá eu executava tarefas
+        como suporte ao cliente, administração de redes de computadores,
+        manutenção de computadores e instalações de câmeras. Iniciei minha
+        carreira como programador em fevereiro de 2021, logo após sair do
+        serviço militar, desde então, venho trabalhando com desenvolvimento web
+        utilizando as principais tecnologias do mercado.
+      </MotionText>
+    </Flex>
   );
 }

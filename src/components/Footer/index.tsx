@@ -1,4 +1,4 @@
-import { Flex, HStack, Icon, Link, Stack, Text } from "@chakra-ui/react";
+import { Box, Flex, HStack, Icon, Link, Stack, Text } from "@chakra-ui/react";
 import { BsGithub, BsInstagram } from "react-icons/bs";
 import { FaLinkedin } from "react-icons/fa";
 import { MdEmail } from "react-icons/md";
@@ -62,18 +62,14 @@ export function Footer(): JSX.Element {
         </Text>
       </HStack>
 
-      <Text
-        fontSize="13px"
-        fontWeight="100"
-        color="#f8f8f8"
-        pos="absolute"
-        bottom="2px"
-      >
-        Copyright © 2022 - Todos os direitos reservados a{" "}
-        <Text display="inline-block" color="#50fa7b">
-          Gabriel Duarte
+      <Box w="100%" pos="absolute" bottom="2px" textAlign="center">
+        <Text fontSize="12px" fontWeight="100" color="#f8f8f8">
+          Copyright © 2022 - Todos os direitos reservados a{" "}
+          <Text display="inline-block" color="#50fa7b">
+            Gabriel Duarte
+          </Text>
         </Text>
-      </Text>
+      </Box>
     </Flex>
   );
 }
