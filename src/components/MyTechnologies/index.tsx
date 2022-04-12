@@ -17,6 +17,7 @@ export function MyTechnologies(): JSX.Element {
     <MotionFlex
       direction="column"
       mb={40}
+      p="0 20px"
       transition={{ delay: 0.8 }}
       initial={{ y: -100, opacity: 0 }}
       animate={{ y: 0, opacity: 1 }}
