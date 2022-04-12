@@ -1,4 +1,4 @@
-import { Box, Flex, Icon, Image, Text } from "@chakra-ui/react";
+import { Box, Flex, Image, Text } from "@chakra-ui/react";
 import profile from "/images/profile.jpg";
 import { RiArrowDownSLine } from "react-icons/ri";
 import { AnimatePresence, motion } from "framer-motion";

@@ -2,9 +2,7 @@ import {
   Modal,
   ModalOverlay,
   ModalContent,
-  ModalHeader,
   ModalFooter,
-  ModalBody,
   ModalCloseButton,
   Text,
   Link,
@@ -30,7 +28,13 @@ export function CardModal({
   slides,
 }: CardModalProps): JSX.Element {
   return (
-    <Modal isCentered isOpen={isOpen} onClose={onClose} size={size}>
+    <Modal
+      scrollBehavior="inside"
+      isCentered
+      isOpen={isOpen}
+      onClose={onClose}
+      size={size}
+    >
       <ModalOverlay />
       <ModalContent bg="#282a36">
         <ModalCloseButton
@@ -46,7 +50,13 @@ export function CardModal({
 
         <ModalFooter bg="#282a36" textAlign="left">
           <Flex direction="column" justify="flex-start">
-            <Text fontSize="16px" fontWeight={100} color="#f8f8f8">
+            <Text
+              maxH="170px"
+              overflow="auto"
+              fontSize="16px"
+              fontWeight={100}
+              color="#f8f8f8"
+            >
               {description}
             </Text>
             <br />
