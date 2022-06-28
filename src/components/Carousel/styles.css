@@ -6,7 +6,7 @@
 .swiper-slide {
   text-align: center;
   font-size: 18px;
-  background: #fff;
+  background: #282a36;
 
   /* Center slide text vertically */
   display: -webkit-box;
@@ -23,12 +23,7 @@
   align-items: center;
 }
 
-.swiper-slide img {
-  display: block;
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
-}
+
 
 .swiper {
   margin-left: auto;

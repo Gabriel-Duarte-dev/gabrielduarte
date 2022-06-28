@@ -1,4 +1,10 @@
-import { Box, Flex, Heading, useMediaQuery } from "@chakra-ui/react";
+import {
+  Box,
+  Flex,
+  Heading,
+  SimpleGrid,
+  useMediaQuery,
+} from "@chakra-ui/react";
 import { motion } from "framer-motion";
 import { ReactNode } from "react";
 
@@ -31,14 +37,7 @@ export function ContainerCard({
       >
         {title}
       </Heading>
-      <Flex
-        direction={!onBreakeCard ? "column" : "row"}
-        justify={!onBreakeCard ? "flex-start" : "center"}
-        align={!onBreakeCard ? "center" : ""}
-        wrap="wrap"
-      >
-        {children}
-      </Flex>
+      <SimpleGrid columns={{ sm: 1, md: 2, lg: 3 }}>{children}</SimpleGrid>
     </MotionBox>
   );
 }

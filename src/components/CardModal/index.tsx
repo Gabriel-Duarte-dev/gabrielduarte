@@ -7,6 +7,7 @@ import {
   Text,
   Link,
   Flex,
+  ModalBody,
 } from "@chakra-ui/react";
 import { Carousel } from "../Carousel";
 
@@ -29,8 +30,7 @@ export function CardModal({
 }: CardModalProps): JSX.Element {
   return (
     <Modal
-      scrollBehavior="inside"
-      isCentered
+      scrollBehavior="outside"
       isOpen={isOpen}
       onClose={onClose}
       size={size}
@@ -46,7 +46,9 @@ export function CardModal({
           _active={{ bg: "" }}
         />
 
-        <Carousel slides={slides} />
+        <ModalBody w="100%" padding={0}>
+          <Carousel slides={slides} />
+        </ModalBody>
 
         <ModalFooter bg="#282a36" textAlign="left">
           <Flex direction="column" justify="flex-start">

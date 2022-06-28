@@ -27,7 +27,7 @@ export function Carousel({ slides }: CarouselProps): JSX.Element {
       {slides.map((img, index) => {
         return (
           <SwiperSlide key={index}>
-            <Image src={img} alt="" />
+            <Image src={img} alt="" objectFit="cover" />
           </SwiperSlide>
         );
       })}

@@ -32,5 +32,29 @@
             "https://i.imgur.com/PpueFWA.png",
             "https://i.imgur.com/iw5ANEQ.png"
         ]
+    },
+    {
+        "description": "Esse é o Localiza Ceunsp, um aplicativo feito por mim juntamente com meus amigos da faculdade com o intuito de ajudar os alunos do campus se localizarem, tendo em vista que a faculdade não possui nenhum mapa ou guia. O aplicativo carrega um mapa que mostra sua localização atual, sendo possível tirar uma foto do lugar onde está, assim que a foto é tirada, o aplicativo retorna uma lista de entidades encontradas na foto e qual é o bloco em que o aluno se encontra, além de pegar a localização em que a foto foi tirada, marcar no mapa e criar um card com todas as imagens desse bloco que já foram tiradas por outros alunos.",
+        "resume": "Esse é o Localiza Ceunsp, um aplicativo feito por mim juntamente com meus amigos da faculdade com o intuito de ajudar os alunos do campus se localizarem, tendo em vista que a faculdade não possui nenhum mapa ou guia.",
+        "link": "",
+        "image": "https://i.imgur.com/5stwdhD.jpg",
+        "slides": [
+            "https://i.imgur.com/5stwdhD.jpg",
+            "https://i.imgur.com/PzV4Uz8.jpg",
+            "https://i.imgur.com/LrK2y2Q.jpg",
+            "https://i.imgur.com/lfvm1QL.jpg",
+            "https://i.imgur.com/6fyrcER.jpg",
+            "https://i.imgur.com/FZ9MyDI.jpg"
+        ]
+    },
+    {
+        "description": "Essa é a versão web do Localiza Ceunsp, feito para os alunos que por algum motivo não conseguem baixar o aplicativo. Com a versão web eles também podem se localizar, basta ter internet. A versão web não possui todas as funcionalidades do aplicativo, como tirar fotos por exemplo, porém, também pode ser utilizado para pegar sua localização e procurar pelos lugares já cadastrados no aplicativo.",
+        "resume": "Essa é a versão web do Localiza Ceunsp, feito para os alunos que por algum motivo não conseguem baixar o aplicativo. Com a versão web eles também podem se localizar, basta ter internet.",
+        "link": "https://localiza-ceunsp.surge.sh",
+        "image": "https://i.imgur.com/hoO7L5K.png",
+        "slides": [
+            "https://i.imgur.com/UQBE1EX.png",
+            "https://i.imgur.com/hoO7L5K.png"
+        ]
     }
 ]
